@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="65">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="Ethernet" displayName="Ethernet" projectFiles="true">
+      <logicalFolder name="Ethernet" displayName="Ethernet" projectFiles="true">
+        <logicalFolder name="W5100" displayName="W5100" projectFiles="true">
+          <itemPath>Ethernet/Ethernet/W5100/w5100.c</itemPath>
+          <itemPath>Ethernet/Ethernet/W5100/w5100.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="W5100S" displayName="W5100S" projectFiles="true">
+          <itemPath>Ethernet/Ethernet/W5100S/w5100s.c</itemPath>
+          <itemPath>Ethernet/Ethernet/W5100S/w5100s.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="W5200" displayName="W5200" projectFiles="true">
+          <itemPath>Ethernet/Ethernet/W5200/w5200.c</itemPath>
+          <itemPath>Ethernet/Ethernet/W5200/w5200.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="W5300" displayName="W5300" projectFiles="true">
+          <itemPath>Ethernet/Ethernet/W5300/w5300.c</itemPath>
+          <itemPath>Ethernet/Ethernet/W5300/w5300.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="W5500" displayName="W5500" projectFiles="true">
+          <itemPath>Ethernet/Ethernet/W5500/w5500.c</itemPath>
+          <itemPath>Ethernet/Ethernet/W5500/w5500.h</itemPath>
+        </logicalFolder>
+        <itemPath>Ethernet/Ethernet/loopback.c</itemPath>
+        <itemPath>Ethernet/Ethernet/loopback.h</itemPath>
+        <itemPath>Ethernet/Ethernet/socket.c</itemPath>
+        <itemPath>Ethernet/Ethernet/socket.h</itemPath>
+        <itemPath>Ethernet/Ethernet/wizchip_conf.c</itemPath>
+        <itemPath>Ethernet/Ethernet/wizchip_conf.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="FILES" displayName="FILES" projectFiles="true">
+      <logicalFolder name="APP_SOCKET" displayName="APP_SOCKET" projectFiles="true">
+        <itemPath>FILES/APP_SOCKET/app_socket.c</itemPath>
+        <itemPath>FILES/APP_SOCKET/app_socket.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="BOARD_PINOUT"
+                     displayName="BOARD_PINOUT"
+                     projectFiles="true">
+        <itemPath>FILES/BOARD_PINOUT/board_pinout.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="GPIO" displayName="GPIO" projectFiles="true">
+        <itemPath>FILES/GPIO/gpio.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="LED" displayName="LED" projectFiles="true">
+        <itemPath>FILES/LED/led.c</itemPath>
+        <itemPath>FILES/LED/led.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="NVM" displayName="NVM" projectFiles="true">
+        <itemPath>FILES/NVM/nvm.c</itemPath>
+        <itemPath>FILES/NVM/nvm.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="PERIPHERAL" displayName="PERIPHERAL" projectFiles="true">
+        <itemPath>FILES/PERIPHERAL/PERIPHERAL.c</itemPath>
+        <itemPath>FILES/PERIPHERAL/PERIPHERAL.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="SPI" displayName="SPI" projectFiles="true">
+        <itemPath>FILES/SPI/spi32mx.c</itemPath>
+        <itemPath>FILES/SPI/spi32mx.h</itemPath>
+        <itemPath>FILES/SPI/spi32mx_drv.h</itemPath>
+        <itemPath>FILES/SPI/spic32mx_drv.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="TIMER" displayName="TIMER" projectFiles="true">
+        <itemPath>FILES/TIMER/timer.c</itemPath>
+        <itemPath>FILES/TIMER/timer.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="WIZNET" displayName="WIZNET" projectFiles="true">
+        <itemPath>FILES/WIZNET/wiznetinit.c</itemPath>
+        <itemPath>FILES/WIZNET/wiznetinit.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>noID</platformTool>
+        <languageToolchain>XC32</languageToolchain>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <packs>
+        <pack name="PIC32MX_DFP" vendor="Microchip" version="1.3.231"/>
+      </packs>
+      <ScriptingSettings>
+      </ScriptingSettings>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C32>
+        <property key="additional-warnings" value="false"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32>
+      <C32-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C32-AR>
+      <C32-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="enable-symbols" value="true"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC32asm-list-to-file" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warning-level" value=""/>
+      </C32-AS>
+      <C32-CO>
+        <property key="coverage-enable" value=""/>
+      </C32-CO>
+      <C32-LD>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="additional-options-write-sla" value="false"/>
+        <property key="allocate-dinit" value="false"/>
+        <property key="code-dinit" value="false"/>
+        <property key="ebase-addr" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="heap-size" value=""/>
+        <property key="input-libraries" value=""/>
+        <property key="kseg-length" value=""/>
+        <property key="kseg-origin" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
+        <property key="no-device-startup-code" value="false"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="oXC32ld-extra-opts" value=""/>
+        <property key="optimization-level" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="serial-length" value=""/>
+        <property key="serial-origin" value=""/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C32-LD>
+      <C32CPP>
+        <property key="additional-warnings" value="false"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="check-new" value="false"/>
+        <property key="eh-specs" value="true"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exceptions" value="true"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="rtti" value="true"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32CPP>
+      <C32Global>
+        <property key="common-include-directories" value=""/>
+        <property key="gp-relative-option" value=""/>
+        <property key="legacy-libc" value="true"/>
+        <property key="mdtcm" value=""/>
+        <property key="mitcm" value=""/>
+        <property key="mstacktcm" value="false"/>
+        <property key="omit-pack-options" value="1"/>
+        <property key="relaxed-math" value="false"/>
+        <property key="save-temps" value="false"/>
+        <property key="wpo-lto" value="false"/>
+      </C32Global>
+      <item path="Ethernet/Ethernet/W5100/w5100.c" ex="true" overriding="false">
+      </item>
+      <item path="Ethernet/Ethernet/W5100/w5100.h" ex="true" overriding="false">
+      </item>
+      <item path="Ethernet/Ethernet/W5100S/w5100s.c" ex="true" overriding="false">
+      </item>
+      <item path="Ethernet/Ethernet/W5100S/w5100s.h" ex="true" overriding="false">
+      </item>
+      <item path="Ethernet/Ethernet/W5300/w5300.c" ex="true" overriding="false">
+      </item>
+      <item path="Ethernet/Ethernet/W5300/w5300.h" ex="true" overriding="false">
+      </item>
+      <item path="Ethernet/Ethernet/W5500/w5500.c" ex="true" overriding="false">
+      </item>
+      <item path="Ethernet/Ethernet/W5500/w5500.h" ex="true" overriding="false">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
