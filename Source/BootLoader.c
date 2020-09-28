@@ -149,45 +149,22 @@ INT main(void)
 	
     // If there is any valid firmware wait
     startTime = CoreTimer_CountGet();
-    if(ValidAppPresent())
-    {   
-        // Delay using CoreTimer
-        while((CoreTimer_CountGet() - startTime)/CORETIMER_FREQ < BOOTLOADER_TIME)
-        {
-            
-            TRANS_LAYER_Task();
-            if(CheckTrigger())
-            {
-                break;
-            }
-            BlinkHeartbeatLED();
-        }
-    }
-    else
-    {
-        //If valid App is not present, enter the upgrade mode
-        SetTrigger();   
-    }
-    
-    
-    
-	// Enter firmware upgrade mode.
-    if(CheckTrigger()){
-        _bootStatus = UPGRADE;
-        while(!FRAMEWORK_ExitFirmwareUpgradeMode()) // Be in loop till framework recieves "run application" command from PC
-        {
-            // Be in loop, looking for commands from PC
-            TRANS_LAYER_Task(); // Run Transport layer tasks
-            FRAMEWORK_FrameWorkTask(); // Run frame work related tasks (Handling Rx frame, process frame and so on)
-            BlinkHeartbeatLED();
-            BlinkProgrammingModeLED();
-        }
-    }
-    // Close trasnport layer.
-    TRANS_LAYER_Close();
-	
-
-	
+    if(CheckTrigger() || !ValidAppPresent())
+	{
+		// Initialize the transport layer - UART/USB/Ethernet
+		TRANS_LAYER_Init(pbClk);
+		_bootStatus = UPGRADE;
+		while(!FRAMEWORK_ExitFirmwareUpgradeMode()) // Be in loop till framework recieves "run application" command from PC
+		{
+			// Enter firmware upgrade mode.
+			// Be in loop, looking for commands from PC
+			TRANS_LAYER_Task(); // Run Transport layer tasks
+			FRAMEWORK_FrameWorkTask(); // Run frame work related tasks (Handling Rx frame, process frame and so on)
+			// Blink LED (Indicates the user that bootloader is running).
+		}
+		// Close trasnport layer.
+		TRANS_LAYER_Close();
+	}
 	// No trigger + valid application = run application.
 	JumpToApp();
 	
